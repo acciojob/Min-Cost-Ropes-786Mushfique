@@ -1,7 +1,7 @@
 function mincost(arr)
 { 
 //write your code here
-  let pq = arr.sort();
+  let pq = [...arr].sort((a, b) => a - b);
   let total = 0;
 
     while (pq.length > 1) {
